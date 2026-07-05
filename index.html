@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="sidebar-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#1E293B"/>
+                        <path d="M12 28V12L20 20L28 12V28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="logo-text">Haven</span>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#" class="nav-link active">Confirmation</a>
+                    <a href="#" class="nav-link">Your Stay</a>
+                    <a href="#" class="nav-link">Amenities</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+                <div class="sidebar-footer">
+                    <p class="sidebar-text">Need help?</p>
+                    <a href="#" class="sidebar-link">Contact Support</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1 class="header-title">Booking Confirmed</h1>
+                <p class="header-subtitle">Confirmation #HB-2024-78942</p>
+            </header>
+
+            <!-- Cards Section -->
+            <div class="cards-container">
+                <!-- Hotel Card -->
+                <div class="card hotel-card">
+                    <div class="card-image">
+                        <div class="placeholder-image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <path d="M21 15l-5-5L5 21"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">The Grand Boutique Hotel</h2>
+                        <p class="card-subtitle">Luxury Suite • Ocean View</p>
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M8 1v14M1 8h14"/>
+                                </svg>
+                                <span>4 Nights</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="8" cy="8" r="6"/>
+                                    <path d="M8 5v3l2 2"/>
+                                </svg>
+                                <span>Check-in: 3:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dates Card -->
+                <div class="card dates-card">
+                    <div class="card-header">
+                        <h3 class="card-header-title">Stay Dates</h3>
+                        <button class="calendar-btn" aria-label="Add to calendar">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="10" height="8" rx="1"/>
+                                <path d="M3 8h10M6 2v2M10 2v2"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="dates-content">
+                        <div class="date-item">
+                            <p class="date-label">Check-in</p>
+                            <p class="date-value">March 15, 2024</p>
+                        </div>
+                        <div class="date-divider">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 8h8"/>
+                            </svg>
+                        </div>
+                        <div class="date-item">
+                            <p class="date-label">Check-out</p>
+                            <p class="date-value">March 19, 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guest Card -->
+                <div class="card guest-card">
+                    <div class="card-header">
+                        <h3 class="card-header-title">Guest Details</h3>
+                    </div>
+                    <div class="guest-content">
+                        <div class="guest-info">
+                            <p class="guest-name">Sarah Johnson</p>
+                            <p class="guest-email">sarah.johnson@email.com</p>
+                            <p class="guest-phone">+1 (555) 123-4567</p>
+                        </div>
+                        <div class="guest-badge">
+                            <span class="badge">Primary Guest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wi-Fi Card -->
+                <div class="card wifi-card">
+                    <div class="card-header">
+                        <h3 class="card-header-title">Wi-Fi Access</h3>
+                    </div>
+                    <div class="wifi-content">
+                        <div class="wifi-network">
+                            <p class="wifi-label">Network</p>
+                            <p class="wifi-value">Haven_Guest</p>
+                        </div>
+                        <div class="wifi-password">
+                            <p class="wifi-label">Password</p>
+                            <div class="password-container">
+                                <p class="wifi-value password-text">Tranquil2024!</p>
+                                <button class="copy-btn" aria-label="Copy password">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="4" y="4" width="8" height="8" rx="1"/>
+                                        <path d="M9 9h3v3H9z"/>
+                                        <path d="M6 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                    </svg>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Card -->
+                <div class="card payment-card">
+                    <div class="card-header">
+                        <h3 class="card-header-title">Payment Summary</h3>
+                        <button class="print-btn" aria-label="Print receipt">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9V6a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v3"/>
+                                <rect x="3" y="9" width="10" height="5" rx="1"/>
+                                <path d="M5 9V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="payment-content">
+                        <div class="payment-row">
+                            <span class="payment-label">Room Rate (4 nights)</span>
+                            <span class="payment-value">$1,200.00</span>
+                        </div>
+                        <div class="payment-row">
+                            <span class="payment-label">Resort Fee</span>
+                            <span class="payment-value">$80.00</span>
+                        </div>
+                        <div class="payment-row">
+                            <span class="payment-label">Taxes</span>
+                            <span class="payment-value">$156.00</span>
+                        </div>
+                        <div class="payment-row total">
+                            <span class="payment-label">Total</span>
+                            <span class="payment-value">$1,436.00</span>
+                        </div>
+                        <div class="payment-status">
+                            <span class="status-badge paid">Paid in Full</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Actions -->
+            <div class="footer-actions">
+                <button class="btn btn-primary">Modify Booking</button>
+                <button class="btn btn-secondary">Download Receipt</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
